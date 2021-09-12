@@ -20,14 +20,14 @@
     <div class="container">
       <label for="movie">Select a movie</label>
       <select name="movie-name" id="movie">
-        <option value="100">Robert</option>
-        <option value="200">Yuvaratna</option>
-        <option value="300">Hero</option>
-        <option value="400">Pogaru</option>
-        <option value="500">Shadow</option>
-        <option value="600">Krishna Talkies</option>
-        <option value="700">Kode Muruga</option>
-        <option value="800">Kaliveera</option>
+        <option value="100">Robert-₹500</option>
+        <option value="200">Yuvaratna-₹400</option>
+        <option value="300">Hero-₹200</option>
+        <option value="400">Pogaru-₹300</option>
+        <option value="500">Shadow-₹200</option>
+        <option value="600">Krishna-₹300</option>
+        <option value="700">Kode Muruga-₹200</option>
+        <option value="800">Kaliveera-₹200</option>
       </select>
       <ul class="showcase">
         <li>
@@ -44,7 +44,7 @@
         </li>
       </ul>
 
-      <div class="screen-container">
+      <div class="screen-container" id="screen-container">
         <div class="screen"></div>
         <div class="row">
           <div class="seat"></div>
@@ -102,7 +102,10 @@
         </div>
       </div>
     </div>
-
+    <p class="text">
+      You have selected <span id="count"> 0 </span> seats for price of ₹
+      <span id="tatal">0</span>
+    </p>
     <script src="./scripts/script.js"></script>
   </body>
 </html>

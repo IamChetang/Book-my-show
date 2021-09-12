@@ -65,9 +65,10 @@ select {
   display: flex;
   justify-content: space-between;
   background-color: rgb(146, 144, 144);
-  padding: 0.4rem 0.8rem;
+  padding: 0.4rem 0.6rem;
   list-style: none;
   border-radius: 10px;
+  margin-top: 10px;
 }
 .showcase li {
   display: flex;
@@ -91,8 +92,9 @@ select {
   height: 6rem;
   width: 100%;
   margin: 1rem 0rem;
-  transform: rotateX(-45deg);
+  transform: rotateX(-35deg);
   box-shadow: 0 3px 10px (rgba(255, 255, 255, 0.7));
+  border-radius: 0 0 20px 20px;
 }
 .seat:nth-of-type(3) {
   margin-left: 1.5rem;
@@ -100,9 +102,8 @@ select {
 .seat:not(.occupied):hover {
   cursor: pointer;
   transform: scale(1, 1.2);
-  background-color: rgb(23, 61, 87);
 }
 .showcase .seat:not(.occupied):hover {
-  cursor: pointer;
+  cursor: default;
   transform: scale(1);
 }
